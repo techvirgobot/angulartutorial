@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { User } from './user/user';
+import { Header } from "./header/header";
+import {DUMMY_USERS} from './dummy_users';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [User, Header],
+  styleUrl: './app.css',
+  templateUrl: './app.html'
 })
-export class App {
-  protected readonly title = signal('angular');
+export class AppComponent {
+  users = DUMMY_USERS;
+
+  onSelectUser(id: string){
+    console.log('Selected user with id' + id) ;
+  }
+
 }

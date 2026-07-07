@@ -1,0 +1,22 @@
+<div class="user-container">
+<!-- 
+<div>
+  <h2>{{ userData.name }}</h2>
+  <p>Age: {{ userData.age }}</p>
+  <p>City: {{ userData.city }}</p>
+</div> -->
+
+<div>
+  <!-- event binding -->
+  <button (click)="onSelectUser()" >
+
+    <!-- property binding  -->
+    <img [src] = "imagePath" [alt] = "name"/>
+
+     <!-- interpolation -->
+    <span>{{ name }}</span>
+  </button>
+</div>
+
+</div>
+
