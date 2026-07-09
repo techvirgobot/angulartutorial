@@ -29,14 +29,8 @@ export class Tasks {
   get selectedUserTasks(){
     return this.tasksService.getUSerTasks(this.userId);
   }
-  onCompleteTask(id:string) {
-    
-  }
-  onStartAddTask() {
-    this.isAddingTask = true
-  }
-  onCloseAddTask(){
-    this.isAddingTask = false
-  }
+
+  onStartAddTask() {  this.isAddingTask = true;  }
+  onCloseAddTask() {  this.isAddingTask = false; }
 
 }
