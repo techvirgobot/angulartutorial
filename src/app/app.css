@@ -1,19 +1,20 @@
 main{
     width: 90%;
+    /* min-height: 100vh; ; */
     max-width: 50rem;
     margin:2.5rem auto;
-    display:grid;
-    grid-auto-flow: row;
+    display:flex;
+    flex-direction: row;
     gap: 2rem;
 }
 
-#USERS {
+#users {
     list-style:none;
     padding: 0;
     margin: 0;
     display:flex;
     gap:0.5rem;
-    overflow:scroll;
+    overflow:visible;
 }
 
 @media (min-width: 768px) {

@@ -8,13 +8,13 @@
 
 <div>
   <!-- event binding -->
-  <button (click)="onSelectUser()" >
+  <button [class.active]= "selected" (click)="onSelectUser()" >
 
     <!-- property binding  -->
-    <img [src] = "imagePath" [alt] = "name"/>
+    <img [src] = "imagePath" [alt] = "user.name"/>
 
      <!-- interpolation -->
-    <span>{{ name }}</span>
+    <span>{{user.name }}</span>
   </button>
 </div>
 

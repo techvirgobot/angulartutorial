@@ -3,6 +3,7 @@ div{
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 5px;
+    max-width: 20rem;
 
 }
 
@@ -17,7 +18,7 @@ border: none;
 font: inherit;
 cursor: pointer;
 width: 100%;
-min-width: 12rem;
+min-width: 13rem;
 text-align:left;
 }
 
