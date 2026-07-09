@@ -1,5 +1,6 @@
 import { Component, computed, Input, signal, input, Output, EventEmitter, output } from '@angular/core'
 import { type UserObject } from "./user.model";
+import { Card } from "../shared/card/card";
 
 // type UserObject = {
 //   id : string,
@@ -17,6 +18,7 @@ import { type UserObject } from "./user.model";
   standalone: true,
   templateUrl:'./user.html',
   styleUrl: './user.css',
+  imports: [Card],
 })
 
 // Angular component class called User

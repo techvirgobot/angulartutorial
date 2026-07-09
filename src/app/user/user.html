@@ -6,7 +6,7 @@
   <p>City: {{ userData.city }}</p>
 </div> -->
 
-<div>
+<app-card>
   <!-- event binding -->
   <button [class.active]= "selected" (click)="onSelectUser()" >
 
@@ -16,7 +16,7 @@
      <!-- interpolation -->
     <span>{{user.name }}</span>
   </button>
-</div>
+</app-card>
 
 </div>
 
